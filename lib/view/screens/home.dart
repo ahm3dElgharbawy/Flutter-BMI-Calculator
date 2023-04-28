@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
                         });
                       },
                       child: CustomContainer(
-                        color: male ? Colors.blue : null,
+                        color: male ? primaryColor : null,
                         child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                         });
                       },
                       child: CustomContainer(
-                        color: female ? Colors.blue : null,
+                        color: female ? primaryColor : null,
                         child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [

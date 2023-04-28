@@ -8,14 +8,16 @@ class CustomIconBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
+    return FloatingActionButton(
       onPressed: onPressed,
-      icon: Icon(
+      child: Icon(
         icon,
         size: 50,
         color: primaryColor,
       ),
-      padding: EdgeInsets.all(0),
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      
     );
   }
 }

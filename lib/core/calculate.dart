@@ -11,7 +11,7 @@ class Calculate {
   String calculateBMI() {
     double heightInMeters = (height / 100); //convert height from centimeter to meter
     result = weight / pow(heightInMeters, 2);
-    return result.toStringAsFixed(2);
+    return result.toStringAsFixed(1) + " kg/m";
   }
 
   String getStatus() {
@@ -32,7 +32,7 @@ class Calculate {
     } else if (result >= 25) {
       return 'You have a more than normal body weight. Try to do more Exercise';
     } else if (result > 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return 'You have a normal body weight.\nGood job!';
     } else {
       return 'You have a lower than normal body weight. Try to eat more';
     }
