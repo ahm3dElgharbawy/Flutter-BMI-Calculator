@@ -89,6 +89,8 @@ class _HomeState extends State<Home> {
                       customText(text: "HEIGHT"),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.baseline,
+                        textBaseline: TextBaseline.alphabetic,
                         children: [
                           customText(text: height.toString(), size: 40),
                           customText(text: "cm"),
@@ -114,7 +116,15 @@ class _HomeState extends State<Home> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             customText(text: "WEIGHT"),
-                            customText(text: weight.toString(), size: 40),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.baseline,
+                              textBaseline: TextBaseline.alphabetic,
+                              children: [
+                                customText(text: weight.toString(), size: 40),
+                                customText(text: "kg")
+                              ],
+                            ),
                             Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
